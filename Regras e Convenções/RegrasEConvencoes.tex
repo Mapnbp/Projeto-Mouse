@@ -1,0 +1,142 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Configuração para destacar código
+\lstset{
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue}\bfseries,
+    stringstyle=\color{red},
+    commentstyle=\color{green!70!black},
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny,
+    breaklines=true,
+    captionpos=b,
+    escapeinside={\%*}{*)}
+}
+
+\title{Regras e Convenções de Escrita de Código}
+\author{for project mouse}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introdução}
+Este documento descreve regras e convençes para escrita de código em linguagens \textbf{C++}, \textbf{CSHARP} e \textbf{GDScript}. A adoção de padrões consistentes melhora a legibilidade e manutenção do código. Serão abordados estilos como \textbf{PEP8}, \textbf{PascalCase} e \textbf{snake\_case}.
+
+\section{Regras Gerais}
+\begin{itemize}
+    \item Utilize indentação consistente (recomenda-se 4 espaços por nvel (TAB padrão do vscode).
+    \item Evite linhas muito longas (entre 80-120 caracteres).
+    \item Insira comentários para explicar lógica complexa ou decisões importantes.
+    \item Nomeie variáveis e funções de forma descritiva e consistente.
+    \item Separe código em módulos ou classes para organizar funcionalidades.
+    \item Escreva TUDO em português exceto convenções decididas ao longo do projeto.
+    \item Evite sempre o uso de váriaveis globias, principalmente em partes maiores e mais complexas da aplicação
+\end{itemize}
+
+\section{C++}
+C++ utilizaremos convenções variadas. Recomenda-se seguir estas práticas gerais até segunda ordem:
+\subsection*{Tipo}
+\begin{itemize}
+    \item Classes: \textbf{PascalCase} (e.g., \lstinline|class MinhaClasse|).
+    \item Funções: \textbf{camel\_Case like} (e.g., \lstinline|void minha_Funcao()|).
+    \item Variáveis: \textbf{snake\_case} (e.g., \lstinline|int minha_var|).
+    \item Constantes: \textbf{UPPER\_SNAKE\_CASE} (e.g., \lstinline|const int MAX_VALUE = 100|).
+\end{itemize}
+
+\subsection*{Exemplo de Código}
+\begin{lstlisting}[language=C++]
+#include <iostream>
+
+class MinhaClasse {
+public:
+    void print_Mensagem() {
+        std::cout << "Hello, World!" << std::endl;
+    }
+};
+
+int main() {
+    MinhaClasse minha_classe;
+    minha_classe.print_Mensagem();
+    return 0;
+}
+\end{lstlisting}
+
+\section{CSHARP}
+CSHARP seguiremos convenções muito próximas das práticas .NET, priorizando \textbf{PascalCase} para muitos elementos.
+\subsection*{Tipo}
+\begin{itemize}
+    \item Classes e métodos: \textbf{PascalCase} (e.g., \lstinline|public class MinhaClasse|, \lstinline|void MeuMetodo()|).
+    \item Variáveis locais e parâmetros: \textbf{camelCase} (e.g., \lstinline|int minhaVar|).
+    \item Constantes: \textbf{UPPER: PASCALCase} (e.g., \lstinline|const int MAXValue = 100|).
+    \item Campos privados: Prefixados com \_ (e.g., \lstinline|private int _meuPrivado|).
+\end{itemize}
+
+\subsection*{Exemplo de Código}
+\begin{lstlisting}[language=C++]
+using System;
+
+namespace MyNamespace {
+    public class MinhaClasse {
+        private int _meuPrivado;
+
+        public void MeuMetodo() {
+            Console.WriteLine("Hello, World!");
+        }
+    }
+
+    class Programa {
+        static void Main(string[] args) {
+            MinhaClasse minhaClasse = new MinhaClasse();
+            MinhaClasse.MeuMetodo();
+        }
+    }
+}
+\end{lstlisting}
+
+\section{GDScript}
+GDScript, utilizado no Godot Engine, segue o estilo \textbf{snake\_case} em geral, com algumas variações específicas para scripts.
+\subsection*{Tipo}
+\begin{itemize}
+    \item Funções e variáveis: \textbf{snake\_case} (e.g., \lstinline|func minha_funcao():|, \lstinline|var minha_var|).
+    \item Classes: \textbf{PascalCase} (e.g., \lstinline|class_name MinhaClasse|).
+    \item Constantes: \textbf{UPPER\_SNAKE\_CASE} (e.g., \lstinline|const MAX_SPEED = 100|).
+\end{itemize}
+
+\subsection*{Exemplo de Código}
+\begin{lstlisting}[language=Python]
+extends Node
+
+class_name MinhaClasse
+
+    const MAX_SPEED = 100
+    
+    var minha_var = 10
+    
+    func _comecar():
+        print("Hello, World!")
+    
+    func minha_funcao():
+        return MAX_SPEED * minha_var
+\end{lstlisting}
+
+\section{Comentários}
+Durante todo o código comente o necessário para que qualquer um seja capaz de entender o que foi feito. Siga o seguinte padrão para comentar: 
+\begin{itemize}
+    \item Funções: Comente acima da declaração da função o que e como ela faz. Explique sua entrada e seu retorno abaixo da declaração da função.
+    \item Classes: Comente acima da declaração da classe para que ela serve. Comente abaixo da declaração da classe todos os seus campos.
+    \item Constantes: Devem ter nomes descritivos o suficiente para que não seja necessário comentá-los, exceto caso esteja utilizando uma constante como flag, portanto deve-se explicar como e porque utiliza essa flag.
+    \item Loops: Deve-se comentar ao lado da declaração do loop o que ele faz e como ele faz
+    \item Sinalização para os outros devs: Deve-se sinalizar caso alguma parte do código não deva ser alterada e porque. Deve-se sinalizar caso alguma parte do código deva ser alterada, como e porque.
+\end{itemize}
+
+\section*{Conclusão}
+Seguir convenções de escrita facilita a colaboração e a leitura do código. Consistência é essencial para projetos profissionais e pessoais. Perceba que seguindo esse padrão de convenções durante o projeto, saberemos em qual linguagem e com o que estamos trabalhando mais facilmente.
+
+\end{document}
