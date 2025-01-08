@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://cop1g3lxprhax"]
+
+[ext_resource type="Script" path="res://menu_de_opcoes.gd" id="1_5ikq4"]
+[ext_resource type="PackedScene" uid="uid://b1e4cgairfpw7" path="res://controlador_tab_container.tscn" id="2_cojtb"]
+
+[sub_resource type="SystemFont" id="SystemFont_ypv1v"]
+font_names = PackedStringArray("Poor Richard")
+subpixel_positioning = 0
+
+[node name="menu_de_opcoes" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5ikq4")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_ypv1v")
+theme_override_font_sizes/font_size = 48
+text = "Opções"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Controlador_Tab_Container" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_cojtb")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="sair_do_menu_Button" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+text = "<"
