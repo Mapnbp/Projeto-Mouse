@@ -2,7 +2,7 @@ extends Label
 
 @onready var option_button: OptionButton = $"../OptionButton"
 
-# Tabela hash para as opções de resoulções
+# Tabela hash para as opções de resoulcoes
 # Eh muito facil de adicionar mais opções de resolução depois tratando isso como uma tabela hash
 const DIC_DE_RESOLUCOES : Dictionary = {
 	"1152 x 648" : Vector2i(1152, 638),
@@ -16,7 +16,6 @@ func _ready():
 func add_opcao_resolucao() -> void:
 	for resolucao_text in DIC_DE_RESOLUCOES:
 		option_button.add_item(resolucao_text)
-		
 		
 func on_resolucao_selecionada(index: int) -> void:
 	pass

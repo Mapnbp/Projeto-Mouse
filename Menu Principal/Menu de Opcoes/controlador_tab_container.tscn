@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://b1e4cgairfpw7"]
 
 [ext_resource type="FontFile" uid="uid://cfhb28salhxn" path="res://Fonts/terminal-grotesque.ttf" id="1_ijckx"]
-[ext_resource type="PackedScene" uid="uid://b3a5mc8mm2rb7" path="res://Menu Principal/Menu de Opcoes/window_mode_button.tscn" id="1_mgxxq"]
-[ext_resource type="PackedScene" uid="uid://c0vuo2ehrwvbs" path="res://Menu Principal/Menu de Opcoes/opcao_resolucao_button.tscn" id="2_ro2m6"]
+[ext_resource type="PackedScene" uid="uid://b3a5mc8mm2rb7" path="res://Menu Principal/Menu de Opcoes/WindowModeButton.tscn" id="1_mgxxq"]
+[ext_resource type="PackedScene" uid="uid://c0vuo2ehrwvbs" path="res://Menu Principal/Menu de Opcoes/OpcaoDeResolucaoButton.tscn" id="2_ro2m6"]
 
 [node name="Controlador_Tab_Container" type="Control"]
 layout_mode = 3
