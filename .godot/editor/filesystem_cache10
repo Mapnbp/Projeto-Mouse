@@ -1,0 +1,45 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1746121739
+::res://Cenas teste/::1746121507
+BarraVida.gd::GDScript/GDScript::3588394279257042835::1746121507::0::1::::BarraVida<>Control<><>0<>0<><>::
+cena1.gd::GDScript/GDScript::1838003813924567743::1746121507::0::1::::cena1<>Node3D<><>0<>0<><>::
+cena1.tscn::PackedScene/PackedScene::7342761087288148915::1746121507::0::1::::<><><>0<>0<><>::uid://1glwil2n62df::::res://Cenas teste/cena1.gd<>uid://breilg5861n1l::::res://Cenas teste/BarraVida.gd<>uid://lu25vpjpwy7d::::res://Cenas teste/Jogador.gd<>uid://cgf0ufiabknqv::::res://Menu de Pausa/MenuDePausa.tscn<>uid://oy2i3gawr2bq::::res://ImagensVida/VidaCheia.png<>uid://bow1hk0v3rl3w::::res://ImagensVida/VidaMeia.png<>uid://8l4tx81ru43s::::res://ImagensVida/VidaVazia.png
+Jogador.gd::GDScript/GDScript::815058894313669795::1746121507::0::1::::Jogador<>Personagem<><>0<>0<><>::
+::res://Cenas teste/ClassesPersonagem/::1746121507
+Personagem.gd::GDScript/GDScript::5451933277815074657::1746121507::0::1::::Personagem<>CharacterBody3D<><>0<>0<><>::
+::res://Cenas teste/ClassesPersonagem/Aliados/::1746121507
+Aliados.gd::GDScript/GDScript::980589612164857772::1746121507::0::1::::Aliados<>Personagem<><>0<>0<><>::
+::res://Cenas teste/ClassesPersonagem/Aliados/ClassesExtendeAliados/::1746121507
+Interativo.gd::GDScript/GDScript::7544285600443050463::1746121507::0::1::::Interativo<>Aliados<><>0<>0<><>::
+::res://Fonts/::1746121628
+terminal-grotesque.ttf::FontFile/FontFile::151127850716912271::1746121507::1746121628::1::::<><><>0<>0<>8eb19054cc26adf508e1cc0d3addea6c<>res://.godot/imported/terminal-grotesque.ttf-df3907790baeebad09e77b3e218e678a.fontdata::
+::res://Imagens de Backgorund menu/::1746121629
+menu neutro.ogv::VideoStreamTheora/VideoStreamTheora::948969585093438645::1746121508::0::1::::<><><>0<>0<><>::
+play load.png::CompressedTexture2D/CompressedTexture2D::4070317254700039188::1746121508::1746121629::1::::<><><>0<>0<>df8d51050228c2b5a2849390700d9ce0<>res://.godot/imported/play load.png-19cdcce22eb9edfe1c3f98693bb25900.ctex::
+::res://ImagensVida/::1746121628
+VidaCheia.png::CompressedTexture2D/CompressedTexture2D::1033844002138551046::1746121508::1746121628::1::::<><><>0<>0<>969eb6aa835e059230ae8f63e7ab1022<>res://.godot/imported/VidaCheia.png-a049bf803f3d4e9698bcab691f729149.ctex::
+VidaMeia.png::CompressedTexture2D/CompressedTexture2D::3416072512429986850::1746121508::1746121628::1::::<><><>0<>0<>b3251945dc440a7beb1b306d12c06826<>res://.godot/imported/VidaMeia.png-5a23b5dbaf287b3f78a37e7480c6bd28.ctex::
+VidaVazia.png::CompressedTexture2D/CompressedTexture2D::2340735978444605038::1746121508::1746121628::1::::<><><>0<>0<>33b4bea612460daa1d7cda43ecb60974<>res://.godot/imported/VidaVazia.png-f520b9fd9c964045a076cdc512f8c704.ctex::
+::res://Menu de Pausa/::1746121508
+MenuDePausa.gd::GDScript/GDScript::8768867347131455731::1746121508::0::1::::MenuDePausa<>Control<><>0<>0<><>::
+MenuDePausa.gdshader::Shader/Shader::6778293642532769832::1746121508::0::1::::<><><>0<>0<><>::
+MenuDePausa.tscn::PackedScene/PackedScene::5205850233658885833::1746121508::0::1::::<><><>0<>0<><>::uid://dw6x71pnxlcyt::::res://Menu de Pausa/MenuDePausa.gd<>uid://cfhb28salhxn::::res://Fonts/terminal-grotesque.ttf<>uid://cop1g3lxprhax::::res://Menu Principal/Menu de Opcoes/MenuDeOpcoes.tscn
+::res://Menu Principal/::1746121739
+icon.svg::CompressedTexture2D/CompressedTexture2D::2708983107604913754::1746121508::1746121628::1::::<><><>0<>0<>9c1ea76f8c1a63c3c5b4a96e737a0bf6<>res://.godot/imported/icon.svg-0b5c954f474a774d823ff036b7fdb4d9.ctex::
+MenuPrincipal.gd::GDScript/GDScript::5566592202772555295::1746121508::0::1::::MenuPrincipal<>Control<><>0<>0<><>::
+MenuPrincipal.tscn::PackedScene::8285767887159512161::1746121739::0::1::::<><><>0<>0<><>::uid://clkq7wdit5ip8::::res://Menu Principal/MenuPrincipal.gd<>uid://nrxnjlcx0rm8::::res://Imagens de Backgorund menu/menu neutro.ogv<>uid://cop1g3lxprhax::::res://Menu Principal/Menu de Opcoes/MenuDeOpcoes.tscn<>uid://c2xn3xa6338gt::::res://Menu Principal/VideoMenu.gd<>uid://cfhb28salhxn::::res://Fonts/terminal-grotesque.ttf<>uid://dosksibfsjg3j::::res://Musicas/Menu/Main Menu.wav
+VideoMenu.gd::GDScript/GDScript::6716261366575860195::1746121508::0::1::::<>VideoStreamPlayer<><>0<>0<><>::
+::res://Menu Principal/Menu de Opcoes/::1746121508
+controlador_tab_container.tscn::PackedScene/PackedScene::4221352809202736000::1746121508::0::1::::<><><>0<>0<><>::uid://cfhb28salhxn::::res://Fonts/terminal-grotesque.ttf<>uid://b3a5mc8mm2rb7::::res://Menu Principal/Menu de Opcoes/WindowModeButton.tscn<>uid://c0vuo2ehrwvbs::::res://Menu Principal/Menu de Opcoes/OpcaoDeResolucaoButton.tscn
+label.gd::GDScript/GDScript::5973944743139197299::1746121508::0::1::::<>Label<><>0<>0<><>::
+MenuDeOpcoes.gd::GDScript/GDScript::2348036786286321585::1746121508::0::1::::MenuDeOpcoes<>Control<><>0<>0<><>::
+MenuDeOpcoes.tscn::PackedScene/PackedScene::5788041689917298251::1746121508::0::1::::<><><>0<>0<><>::res://Menu Principal/Menu de Opcoes/MenuDeOpcoes.gd<>uid://cfhb28salhxn::::res://Fonts/terminal-grotesque.ttf<>uid://b1e4cgairfpw7::::res://Menu Principal/Menu de Opcoes/controlador_tab_container.tscn
+OpcaoDeDisplayButton.tscn::PackedScene/PackedScene::5224248771889167806::1746121508::0::1::::<><><>0<>0<><>::res://Menu Principal/Menu de Opcoes/label.gd
+OpcaoDeResolucaoButton.gd::GDScript/GDScript::7537446990246659578::1746121508::0::1::::<>Control<><>0<>0<><>::
+OpcaoDeResolucaoButton.tscn::PackedScene/PackedScene::6572155156793591080::1746121508::0::1::::<><><>0<>0<><>::res://Menu Principal/Menu de Opcoes/OpcaoDeResolucaoButton.gd<>uid://cfhb28salhxn::::res://Fonts/terminal-grotesque.ttf
+WindowModeButton.gd::GDScript/GDScript::1333069298854698576::1746121508::0::1::::<>Control<><>0<>0<><>::
+WindowModeButton.tscn::PackedScene/PackedScene::4353551401455448542::1746121508::0::1::::<><><>0<>0<><>::res://Menu Principal/Menu de Opcoes/WindowModeButton.gd<>uid://cfhb28salhxn::::res://Fonts/terminal-grotesque.ttf
+::res://Musicas/::1746121739
+default_bus_layout.tres::AudioBusLayout/AudioBusLayout::8195849238479843336::1746121508::0::1::::<><><>0<>0<><>::
+::res://Musicas/Menu/::1746121739
+Main Menu.wav::AudioStreamWAV::8179704397785983649::1746121508::1746121740::1::::<><><>0<>0<>30f998d6921979551c61ca1be23e684d<>res://.godot/imported/Main Menu.wav-5fc218f04d96b7c34f24c183eb39cd15.sample::
